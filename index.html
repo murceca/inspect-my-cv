@@ -6,6 +6,7 @@
         <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://use.fontawesome.com/1c49fa6be1.js"></script>
+        <script src="inspect.js"></script>
     </head>
     <body>
         <div class="main-menu">
@@ -189,7 +190,7 @@
             <p class="text-primary">
                 Upload your CV for a free, confidential review from a trusted CV expert.
             </p>
-            <form class="form-horizontal form-inspect">
+            <form id="form-inspect" class="form-horizontal form-inspect" action="inspect.js">
                 <fieldset>
                     <br>
                     <div class="form-group">
@@ -212,7 +213,7 @@
                     <div class="form-group">
                         <div class="col-md-6 col-md-offset-6">
                             <button type="reset" class="btn">Cancel</button>
-                            <button type="submit" class="btn">Submit</button>
+                            <button id="submit-btn" type="submit" class="btn">Submit</button>
                         </div>
                     </div>
                 </fieldset>
