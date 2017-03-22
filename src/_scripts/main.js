@@ -1,3 +1,7 @@
+'use strict';
+
+import $ from 'jquery';
+
 const showStepItem = ($carousel, activeItem) => {
     $carousel.find('.step-guide-item').addClass('hidden');
     $carousel.find(`.step-guide-item:nth-child(${activeItem})`).removeClass('hidden');
