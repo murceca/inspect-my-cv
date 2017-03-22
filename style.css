@@ -169,16 +169,41 @@ body {
 }
 
 .form-inspect {
-   position:relative;
-   top:10%;
-   left:12%;
+   margin: 30px 0 70px 400px;
+   width: 510px;
 }
 
-.form-inspect label {
+.form-inspect p {
+    padding: 5px 5px 0 0;
     color: #696969;
-    font-size: 16px;
     font-weight: bold;
-    padding: 0;
+    font-size: 16px;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0 10px 0;
+    color: #696969;
+    font-weight: bold;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0.2;
+    outline: none;
+    background: #696969;
+    cursor: inherit;
+    display: block;
 }
 
 button[type=reset], button[type=submit] {
@@ -186,10 +211,14 @@ button[type=reset], button[type=submit] {
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    margin-top: 4px;
+    margin-top: 15px;
     cursor: pointer;
     font-weight: bold;
     font-size: 16px;
+}
+
+.form-inspect button[type=reset] {
+    margin-left: 305px;
 }
 
 button[type=reset] {
@@ -218,11 +247,6 @@ button[type=submit] {
     margin: 40px 0 0 130px;
 }
 
-.form-input .form-control {
-    margin: 5px 0 10px 0;
-    width: 500px;
-}
-
 .email, .telephone, .location {
     margin: 25px 0 0 50px;
     font-weight: bold;
@@ -235,12 +259,20 @@ button[type=submit] {
     color: rgb(0, 183,255);
     padding-right: 10px;
 }
+.form-input {
+    margin-top: 30px;
+}
 
 .form-input p {
     font-size: 16px;
     font-weight: bold;
     color: #696969;
     margin: 0px;
+}
+
+.form-input .form-control {
+    width: 510px;
+    margin: 5px 0;
 }
 
 .cancel, .send {
@@ -259,7 +291,7 @@ button[type=submit] {
 .social-title h1 {
     height: auto;
     background-color: rgb(0, 183,255);
-    margin: 120px 0 0 0;
+    margin: 90px 0 0 0;
     font-weight: bold;
     color: white;
     text-align: left;
