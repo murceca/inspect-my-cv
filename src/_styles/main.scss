@@ -1,323 +1,414 @@
 // Normalize Styles
 //@import 'node_modules/normalize.css/normalize';
-
 // Import Modules
 //@import '../_modules/link/link';
+$back-color: rgb(0, 183,255);
+$prime-color: #696969;
+$title-margin: 40px;
+$title-padding: 35px 0;
+$title-font: 36px;
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
-.main-menu ul {
-    height: auto;
-    font-weight: bold;
-    font-size: 25px;
-    background-color: rgb(0, 183,255);
-    padding: 15px;
-}
+.row {
+  .main-menu {
+    ul {
+      height: auto;
+      font-weight: bold;
+      font-size: 25px;
+      background-color: $back-color;
+      padding: 25px;
 
-.main-menu ul li {
-    float: right;
-}
+      li {
+        float: right;
+      }
 
-.main-menu ul a {
-    color: white;
-}
+      a {
+        color: white;
+      }
 
-.main-menu ul a:hover {
-    color: #696969;
-}
+      a:hover {
+        color: $prime-color;
+      }
+    }
+  }
 
-.logo {
+  .logo {
     position: relative;
     top: -60px;
     left: 30px;
     width: 215px;
     height: 130px;
-}
+  }
 
-.title-about {
-    padding: 0px;
+  .title-about {
+    padding: 0;
     margin: 15px 15px 0 0;
     text-align: right;
     float: right;
     font-size: 34px;
     font-weight: bold;
-    color: #696969;
+    color: $prime-color;
+  }
 }
 
-.text-about p {
-    margin: 10px 10px 10px 30px;
-    text-align: justify;
-    font-size: 18px;
-    color: #525252;
+.row {
+  .text-about {
+    p {
+      margin: 10px 10px 10px 30px;
+      text-align: justify;
+      font-size: 18px;
+      color: #525252;
+    }
+  }
+
+  .video-about {
+    video {
+      margin-top: 10px;
+      text-align: right;
+      width: 650px;
+      height: 350px;
+    }
+  }
+
+  .col-md-12 {
+    .step {
+      .step-title {
+        width: 100%;
+        height: auto;
+        background-color: $back-color;
+        margin-top: $title-margin;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        padding: $title-padding;
+        font-size: $title-font;
+      }
+
+      .row {
+        margin: 30px 0 50px;
+      }
+
+      text {
+        font-size: 35px;
+        font-weight: bold;
+      }
+    }
+
+    .step-guide-carousel {
+      .step-guide-item {
+        .fa-chevron-left,
+        .fa-chevron-right,
+        .fa-user-circle-o {
+          color: $prime-color;
+        }
+
+        .chevron-left {
+          margin-top: 70px;
+          text-align: center;
+        }
+
+        .chevron-right {
+          margin-top: 70px;
+          text-align: center;
+        }
+
+        .step-guide {
+          h2 {
+            text-decoration: underline;
+            text-align: center;
+            color: $prime-color;
+            font-weight: bold;
+          }
+
+          p {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: justify;
+            color: $prime-color;
+          }
+        }
+      }
+    }
+  }
 }
 
-.video-about video {
-    margin-top: 10px;
-    text-align: right;
-    width: 650px;
-    height: 350px;
+.row {
+  .testimonials {
+    .testimonials-title {
+      height: auto;
+      background-color: $back-color;
+      margin-top: $title-margin;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      padding: $title-padding;
+      font-size: $title-font;
+    }
+
+    .client {
+      margin: 30px 20px 50px 0;
+
+      .user-photo {
+        img {
+          margin: 20px 0 0 50px;
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      .chevron-opinion {
+        margin-top: 90px;
+        text-align: left;
+      }
+
+      .opinion {
+        h1 {
+          text-align: center;
+          color: $prime-color;
+          font-weight: bold;
+          margin-right: 15px;
+        }
+
+        p {
+          font-size: 18px;
+          text-align: justify;
+          margin-top: 10px;
+          color: $prime-color;
+        }
+
+        .fa-star {
+          color: gold;
+          float: right;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
 }
 
-.step-title {
-    height: auto;
-    background-color: rgb(0, 183,255);
-    margin-top: 40px;
+.row {
+  .inspectmycv {
+    .inspect-title {
+      h1 {
+        height: auto;
+        background-color: $back-color;
+        margin-top: 60px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        padding: $title-padding;
+        font-size: $title-font;
+      }
+    }
+
+    > h1 {
+      font-size: 60px;
+      padding-top: 20px;
+      text-align: center;
+      color: $prime-color;
+    }
+
+    > p {
+      font-size: 30px;
+      text-align: center;
+      color: $prime-color;
+    }
+
+    .form-inspect {
+      margin: 30px 0 70px 400px;
+      width: 510px;
+
+      p {
+        padding: 5px 5px 0 0;
+        color: $prime-color;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .btn-file {
+        position: relative;
+        overflow: hidden;
+        margin: 10px 0;
+        color: $prime-color;
+        font-weight: bold;
+        padding: 7px;
+        font-size: 14px;
+
+        input[type=file] {
+          position: absolute;
+          top: 0;
+          right: 0;
+          min-width: 100%;
+          min-height: 100%;
+          font-size: 100px;
+          text-align: right;
+          filter: alpha(opacity=0);
+          opacity: 0.2;
+          outline: none;
+          background: $prime-color;
+          cursor: inherit;
+          display: block;
+        }
+      }
+
+      button[type=reset],
+      button[type=submit] {
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin-top: 15px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      button[type=reset] {
+        margin-left: 305px;
+      }
+
+      button[type=reset] {
+        background-color: $prime-color;
+      }
+
+      button[type=submit] {
+        background-color: $back-color;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.row {
+  .contact-us {
+    .contact-us-title {
+      h1 {
+        height: auto;
+        background-color: $back-color;
+        margin-top: $title-margin;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        padding: $title-padding;
+        font-size: $title-font;
+      }
+    }
+
+    .contact-us-p {
+      font-size: 45px;
+      font-weight: bold;
+      color: $back-color;
+      margin: 40px 0 0 130px;
+    }
+
+    .row {
+      .contact-list {
+        .email,
+        .location,
+        .telephone {
+          margin: 25px 0 0 50px;
+          font-weight: bold;
+          font-size: 27px;
+          color: $prime-color;
+          padding: 5px;
+        }
+
+        .fa {
+          color: $back-color;
+          padding-right: 10px;
+        }
+      }
+
+      .form-input {
+        margin-top: 30px;
+
+        p {
+          font-size: 16px;
+          font-weight: bold;
+          color: $prime-color;
+          margin: 0;
+        }
+
+        .form-control {
+          width: 510px;
+          margin: 5px 0;
+        }
+
+        .cancel,
+        .send {
+          width: 100px;
+          margin-bottom: 20px;
+        }
+
+        .cancel {
+          margin-left: 290px;
+        }
+
+        button[type=reset],
+        button[type=submit] {
+          border: none;
+          color: white;
+          padding: 10px 20px;
+          text-decoration: none;
+          margin-top: 15px;
+          cursor: pointer;
+          font-weight: bold;
+          font-size: 16px;
+        }
+
+        button[type=reset] {
+          background-color: $prime-color;
+        }
+
+        button[type=submit] {
+          background-color: $back-color;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.row {
+  .social {
+    .social-title {
+      h1 {
+        height: auto;
+        background-color: $back-color;
+        margin: 90px 0 0;
+        font-weight: bold;
+        color: white;
+        text-align: left;
+        padding: 35px 0 35px 85px;
+        font-size: $title-font;
+      }
+
+      .social-link {
+        color: white;
+        padding-left: 40px;
+        cursor: pointer;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .fa-google-plus-square {
+        padding-left: 500px;
+      }
+    }
+  }
+}
+
+.row {
+  .footer {
+    text-align: center;
     font-weight: bold;
-    color: white;
-    text-align: center;
-    padding: 35px 0 35px 0;
-}
-
-.step .row {
-    margin: 30px 0 50px 0;
-}
-
-.fa-chevron-left, .fa-chevron-right, .fa-user-circle-o {
-    color: #696969;
-}
-
-.chevron-left {
-    margin-top: 70px;
-    text-align: center;
-}
-
-.chevron-right {
-    margin-top: 70px;
-    text-align: center;
-}
-.step-guide h2 {
-    text-decoration: underline;
-    text-align: center;
-    color: #696969;
-    font-weight: bold;
-}
-
-.step-guide p {
-    margin-top: 20px;
-    font-size: 18px;
-    text-align: justify;
-    color: #696969;
-}
-
-.step text {
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.testimonials-title {
-    height: auto;
-    background-color: rgb(0, 183,255);
-    margin-top: 40px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    padding: 35px 0 35px 0;
-}
-
-.testimonials .client {
-    margin: 30px 20px 50px 0;
-}
-
-.user-photo img {
-    margin: 20px 0 0 50px;
-    width: 200px;
-    height: 200px;
-}
-
-.chevron-opinion {
-    margin-top: 90px;
-    text-align: left;
-}
-
-.opinion h1 {
-    text-align: center;
-    color: #696969;
-    font-weight: bold;
-    margin-right: 15px;
-}
-
-.opinion p {
-    font-size: 18px;
-    text-align: justify;
-    margin-top: 10px;
-    color: #696969;
-}
-
-.fa-star {
-    color: gold;
-    float: right;
-    margin-right: 5px;
-}
-
-.inspect-title h1 {
-    height: auto;
-    background-color: rgb(0, 183,255);
-    margin-top: 60px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    padding: 35px 0 35px 0;
-}
-
-.inspectmycv > h1 {
-    font-size: 60px;
-    padding-top: 20px;
-    text-align: center;
-    color: #696969;
-}
-
-.inspectmycv > p {
-    font-size: 30px;
-    text-align: center;
-    color: #696969;
-}
-
-.form-inspect {
-   margin: 30px 0 70px 400px;
-   width: 510px;
-}
-
-.form-inspect p {
-    padding: 5px 5px 0 0;
-    color: #696969;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.btn-file {
-    position: relative;
-    overflow: hidden;
-    margin: 10px 0 10px 0;
-    color: #696969;
-    font-weight: bold;
-    padding: 7px;
     font-size: 14px;
-}
-
-.btn-file input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0.2;
-    outline: none;
-    background: #696969;
-    cursor: inherit;
-    display: block;
-}
-
-button[type=reset], button[type=submit] {
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin-top: 15px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.form-inspect button[type=reset] {
-    margin-left: 305px;
-}
-
-button[type=reset] {
-    background-color: #696969;
-}
-
-button[type=submit] {
-    background-color: rgb(0, 183,255);
-    margin-left: 10px;
-}
-
-.contact-us-title h1 {
-    height: auto;
-    background-color: rgb(0, 183,255);
-    margin-top: 40px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    padding: 35px 0 35px 0;
-}
-
-.contact-us-p {
-    font-size: 45px;
-    font-weight: bold;
-    color: rgb(0, 183,255);
-    margin: 40px 0 0 130px;
-}
-
-.email, .telephone, .location {
-    margin: 25px 0 0 50px;
-    font-weight: bold;
-    font-size: 27px;
-    color: #696969;
     padding: 5px;
-}
-
-.contact-list .fa {
-    color: rgb(0, 183,255);
-    padding-right: 10px;
-}
-.form-input {
-    margin-top: 30px;
-}
-
-.form-input p {
-    font-size: 16px;
-    font-weight: bold;
-    color: #696969;
-    margin: 0px;
-}
-
-.form-input .form-control {
-    width: 510px;
-    margin: 5px 0;
-}
-
-.cancel, .send {
-    width: 100px;
-    margin-bottom: 20px;
-}
-
-.cancel {
-    margin-left: 290px;
-}
-
-.social a {
-  text-decoration: none;
-}
-
-.social-title h1 {
-    height: auto;
-    background-color: rgb(0, 183,255);
-    margin: 90px 0 0 0;
-    font-weight: bold;
-    color: white;
-    text-align: left;
-    padding: 35px 0 35px 85px;
-}
-
-.social-link {
-    color: white;
-    padding-left: 40px;
-    cursor: pointer;
-}
-
-.fa-google-plus-square {
-    padding-left: 500px;
-}
-
-.footer {
-    text-align: center;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 5px;
-    color: #696969;
+    color: $prime-color;
+  }
 }
