@@ -317,10 +317,8 @@
     <div class="row">
       <div id="inspect-my-cv" class="inspectmycv">
         <div class="inspect-title">
-          <h1>
-            <i class="fa fa-share-square-o" aria-hidden="true"></i>
-            Inspect my CV!
-          </h1>
+          <i class="fa fa-share-square-o" aria-hidden="true"></i>
+          Inspect my CV!
         </div>
         <h1>
           Take a FREE CV Review
@@ -345,10 +343,8 @@
     <div class="row">
       <div id="contact-us" class="contact-us">
         <div class="contact-us-title">
-          <h1>
-            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-            Contact us
-          </h1>
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+          Contact us
         </div>
         <p class="contact-us-p">Get in touch</p>
         <div class="row">
@@ -383,10 +379,10 @@
     </div>
     <div class="row social">
       <div class="col-md-6">
-        <h1 class="social-title">
+        <div class="social-title">
           <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
           We are in social
-        </h1>
+        </div>
       </div>
       <div class="col-md-6">
         <div class="social-links-group">

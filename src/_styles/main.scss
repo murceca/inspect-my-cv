@@ -170,10 +170,8 @@ body {
 
 .inspectmycv {
   .inspect-title {
-    h1 {
-      @extend .block-title;
-      margin-top: 60px;
-    }
+    @extend .block-title;
+    margin-top: 60px;
   }
 
   > h1 {
@@ -254,9 +252,7 @@ body {
 
 .contact-us {
   .contact-us-title {
-    h1 {
-      @extend .block-title;
-    }
+    @extend .block-title;
   }
 
   .contact-us-p {
@@ -337,10 +333,12 @@ body {
   .social-title {
     @extend .block-title;
     text-align: left;
+    margin-top: 0;
   }
 
   .social-links-group {
     @extend .block-title;
+    margin-top: 0;
 
     .social-link {
       text-decoration: none;
