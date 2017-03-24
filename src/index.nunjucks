@@ -381,25 +381,27 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="social">
-        <div class="social-title">
-          <h1>
-            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-            We are in social
-            <a href="https://plus.google.com/u/0/112643538224871282165">
-              <i class="fa fa-google-plus-square social-link" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/murceca">
-              <i class="fa fa-github social-link" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/grischuksv/">
-              <i class="fa fa-linkedin social-link" aria-hidden="true"></i>
-            </a>
-            <a href="https://twitter.com/r_svetulik">
-              <i class="fa fa-twitter-square social-link" aria-hidden="true"></i>
-            </a>
-          </h1>
+    <div class="row social">
+      <div class="col-md-6">
+        <h1 class="social-title">
+          <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+          We are in social
+        </h1>
+      </div>
+      <div class="col-md-6">
+        <div class="social-links-group">
+          <a href="https://plus.google.com/u/0/112643538224871282165" class="social-link">
+            <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/murceca" class="social-link">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/grischuksv/" class="social-link">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/r_svetulik" class="social-link">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </div>

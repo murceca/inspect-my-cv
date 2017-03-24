@@ -332,25 +332,27 @@ body {
 }
 
 .social {
+  background-color: $prime-color;
+
   .social-title {
-    h1 {
-      @extend .block-title;
-      margin: 90px 0 0;
-      text-align: left;
-      padding: 35px 0 35px 85px;
-    }
+    @extend .block-title;
+    text-align: left;
+  }
+
+  .social-links-group {
+    @extend .block-title;
 
     .social-link {
-      color: $white-color;
-      padding-left: 40px;
-    }
-
-    a {
       text-decoration: none;
-    }
+      color: inherit;
 
-    .fa-google-plus-square {
-      padding-left: 500px;
+      & + .social-link {
+        margin-left: 15px;
+      }
+
+      &:hover {
+        color: $gray-color;
+      }
     }
   }
 }
