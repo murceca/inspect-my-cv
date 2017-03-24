@@ -47,10 +47,12 @@
       </div>
       <div class="col-md-12">
         <div class="step">
-          <h1 class="step-title">
-            <i class="fa fa-cogs" aria-hidden="true"></i>
-            How it works? - Our 5 Step Guide...
-          </h1>
+          <div class="row">
+            <h1 class="step-title">
+              <i class="fa fa-cogs" aria-hidden="true"></i>
+              How it works? - Our 5 Step Guide...
+            </h1>
+          </div>
           <div class="step-guide-carousel">
             <div class="row step-guide-item">
               <div class="col-md-1 chevron-left">
