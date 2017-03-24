@@ -362,48 +362,59 @@
               Ukraine, Vinnytsia
             </p>
           </div>
-          <div class="col-md-6 form-input">
-            <p>Name</p>
-            <input type="text" class="form-control" placeholder="John Snow">
-            <p>Telephone</p>
-            <input type="text" class="form-control" placeholder="01234567890">
-            <p>Email</p>
-            <input type="text" class="form-control" placeholder="you@youremail.com">
-            <p>Message</p>
-            <textarea class="form-control" rows="3" placeholder="Your message here"></textarea>
-            <button type="reset" class="btn cancel">Cancel</button>
-            <button type="submit" class="btn send">Send</button>
+          <div class="col-md-6">
+            <form class="contact-us-form">
+              <div class="form-group">
+                <label for="contact-us-username">Name</label>
+                <input type="text" class="form-control" placeholder="John Snow" id="contact-us-username">
+              </div>
+              <div class="form-group">
+                <label for="contact-us-phone">Telephone</label>
+                <input type="text" class="form-control" placeholder="01234567890" id="contact-us-phone">
+              </div>
+              <div class="form-group">
+                <label for="contact-us-email">Email</label>
+                <input type="text" class="form-control" placeholder="you@youremail.com" id="contact-us-email">
+              </div>
+              <div class="form-group">
+                <label for="contact-us-message">Message</label>
+                <textarea class="form-control" rows="3" placeholder="Your message here" id="contact-us-message"></textarea>
+              </div>
+              <div class="buttons-group">
+                <button type="reset" class="btn cancel">Cancel</button>
+                <button type="submit" class="btn send">Send</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row social">
-      <div class="col-md-6">
-        <div class="social-title">
-          <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-          We are in social
+      <div class="row social">
+        <div class="col-md-6">
+          <div class="social-title">
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+            We are in social
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="social-links-group">
+            <a href="https://plus.google.com/u/0/112643538224871282165" class="social-link">
+              <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/murceca" class="social-link">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/grischuksv/" class="social-link">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/r_svetulik" class="social-link">
+              <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="social-links-group">
-          <a href="https://plus.google.com/u/0/112643538224871282165" class="social-link">
-            <i class="fa fa-google-plus-square" aria-hidden="true"></i>
-          </a>
-          <a href="https://github.com/murceca" class="social-link">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/grischuksv/" class="social-link">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a href="https://twitter.com/r_svetulik" class="social-link">
-            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-          </a>
-        </div>
+      <div class="row">
+        <footer class="footer">
+          &copy; Inspect-my-CV 2017</footer>
       </div>
     </div>
-    <div class="row">
-      <footer class="footer">
-        &copy; Inspect-my-CV 2017</footer>
-    </div>
-  </div>
-{% endblock %}
+  {% endblock %}
