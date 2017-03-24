@@ -81,18 +81,17 @@ body {
   .step-title {
     @extend .block-title;
   }
-
-  text {
-    font-size: 35px;
-    font-weight: bold;
-  }
 }
 
 .step-guide-carousel {
   .step-guide-item {
+    text {
+      font-size: 35px;
+      font-weight: bold;
+    }
+
     .fa-chevron-left,
-    .fa-chevron-right,
-    .fa-user-circle-o {
+    .fa-chevron-right {
       color: $gray-color;
     }
 
