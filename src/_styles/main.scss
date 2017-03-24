@@ -3,6 +3,7 @@
 // Import Modules
 //@import '../_modules/link/link';
 @import 'variables';
+@import '../_modules/step-guide/step-guide';
 
 body {
   overflow-x: hidden;
@@ -80,46 +81,6 @@ body {
 
   .step-title {
     @extend .block-title;
-  }
-}
-
-.step-guide-carousel {
-  .step-guide-item {
-    text {
-      font-size: 35px;
-      font-weight: bold;
-    }
-
-    .fa-chevron-left,
-    .fa-chevron-right {
-      color: $gray-color;
-    }
-
-    .chevron-left {
-      margin-top: 70px;
-      text-align: center;
-    }
-
-    .chevron-right {
-      margin-top: 70px;
-      text-align: center;
-    }
-
-    .step-guide {
-      h2 {
-        text-decoration: underline;
-        text-align: center;
-        color: $gray-color;
-        font-weight: bold;
-      }
-
-      p {
-        margin-top: 20px;
-        font-size: 18px;
-        text-align: justify;
-        color: $gray-color;
-      }
-    }
   }
 }
 

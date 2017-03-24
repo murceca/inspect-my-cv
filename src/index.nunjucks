@@ -1,6 +1,6 @@
 {% extends '_layouts/base.nunjucks' %}
 
-{% import "_modules/link/link.nunjucks" as link %}
+{% import "_modules/step-guide/step-guide.nunjucks" as stepGuide %}
 
 {% block content %}
   <div class="container-fluid">
@@ -54,136 +54,11 @@
             </h1>
           </div>
           <div class="step-guide-carousel">
-            <div class="row step-guide-item">
-              <div class="col-md-1 chevron-left">
-                <a href="">
-                  <i class="fa fa-chevron-left fa-4x" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div class="col-md-2">
-                <svg>
-                  <circle r="50" cx="40%" cy="65%" fill="rgb(0, 183,255)"></circle>
-                  <text x="40%" y="73%" text-anchor="middle" fill="#fff">#1</text>
-                </svg>
-              </div>
-              <div class="col-md-8 step-guide">
-                <h2>
-                  Place your order
-                </h2>
-                <p>
-                  The Inspect-my-CV team has helped more than 180,000 professionals, from every industry, at every level, to improve their career prospects through their CV. They also provide professional CV writing services and written cover letters
-                </p>
-              </div>
-              <div class="col-md-1 chevron-right">
-                <a href="">
-                  <i class="fa fa-chevron-right fa-4x" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row step-guide-item hidden">
-              <div class="col-md-1 chevron-left">
-                <a href="">
-                  <i class="fa fa-chevron-left fa-4x" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div class="col-md-2">
-                <svg>
-                  <circle r="50" cx="40%" cy="65%" fill="rgb(0, 183,255)"></circle>
-                  <text x="40%" y="73%" text-anchor="middle" fill="#fff">#2</text>
-                </svg>
-              </div>
-              <div class="col-md-8 step-guide">
-                <h2>
-                  Send us your career details
-                </h2>
-                <p>
-                  The first draft will be sent to you via email as a Word document for you to review, work with your CV consultant to make any amendments before receiving your final CV
-                </p>
-              </div>
-              <div class="col-md-1 chevron-right">
-                <a href="">
-                  <i class="fa fa-chevron-right fa-4x" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row step-guide-item hidden">
-              <div class="col-md-1 chevron-left">
-                <a href="">
-                  <i class="fa fa-chevron-left fa-4x" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div class="col-md-2">
-                <svg>
-                  <circle r="50" cx="40%" cy="65%" fill="rgb(0, 183,255)"></circle>
-                  <text x="40%" y="73%" text-anchor="middle" fill="#fff">#3</text>
-                </svg>
-              </div>
-              <div class="col-md-8 step-guide">
-                <h2>
-                  Get introduced to your CV consultant
-                </h2>
-                <p>
-                  Your order will be allocated on sector and salary to the most appropriate CV consultant, who you will have unlimited contact with throughout the process
-                </p>
-              </div>
-              <div class="col-md-1 chevron-right">
-                <a href="">
-                  <i class="fa fa-chevron-right fa-4x" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row step-guide-item hidden">
-              <div class="col-md-1 chevron-left">
-                <a href="">
-                  <i class="fa fa-chevron-left fa-4x" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div class="col-md-2">
-                <svg>
-                  <circle r="50" cx="40%" cy="65%" fill="rgb(0, 183,255)"></circle>
-                  <text x="40%" y="73%" text-anchor="middle" fill="#fff">#4</text>
-                </svg>
-              </div>
-              <div class="col-md-8 step-guide">
-                <h2>
-                  Review your CV
-                </h2>
-                <p>
-                  The first draft will be sent to you via email as a Word document for you to review, work with your CV consultant to make any amendments before receiving your final CV
-                </p>
-              </div>
-              <div class="col-md-1 chevron-right">
-                <a href="">
-                  <i class="fa fa-chevron-right fa-4x" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row step-guide-item hidden">
-              <div class="col-md-1 chevron-left">
-                <a href="">
-                  <i class="fa fa-chevron-left fa-4x" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div class="col-md-2">
-                <svg>
-                  <circle r="50" cx="40%" cy="65%" fill="rgb(0, 183,255)"></circle>
-                  <text x="40%" y="73%" text-anchor="middle" fill="#fff">#5</text>
-                </svg>
-              </div>
-              <div class="col-md-8 step-guide">
-                <h2>
-                  Order complete
-                </h2>
-                <p>
-                  This can be done online via our website or over the telephone with a member of our CV team
-                </p>
-              </div>
-              <div class="col-md-1 chevron-right">
-                <a href="">
-                  <i class="fa fa-chevron-right fa-4x" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
+            {{ stepGuide.item(1, 'Place your order', 'The Inspect-my-CV team has helped more than 180,000 professionals, from every industry, at every level, to improve their career prospects through their CV. They also provide professional CV writing services and written cover letters') }}
+            {{ stepGuide.item(2, 'Send us your career details', 'The first draft will be sent to you via email as a Word document for you to review, work with your CV consultant to make any amendments before receiving your final CV', 'hidden') }}
+            {{ stepGuide.item(3, 'Get introduced to your CV consultant', 'Your order will be allocated on sector and salary to the most appropriate CV consultant, who you will have unlimited contact with throughout the process', 'hidden') }}
+            {{ stepGuide.item(4, 'Review your CV', 'The first draft will be sent to you via email as a Word document for you to review, work with your CV consultant to make any amendments before receiving your final CV', 'hidden') }}
+            {{ stepGuide.item(5, 'Order complete', 'This can be done online via our website or over the telephone with a member of our CV team', 'hidden') }}
           </div>
         </div>
       </div>

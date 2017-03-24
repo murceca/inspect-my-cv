@@ -1,0 +1,26 @@
+{% macro item(pos, title, desc, cls='') %}
+
+<div class="row step-guide-item {{cls}}">
+  <div class="col-md-1 chevron-left">
+    <a href="#">
+      <i class="fa fa-chevron-left fa-4x" aria-hidden="true"></i>
+    </a>
+  </div>
+  <div class="col-md-2">
+    <svg>
+      <circle r="50" cx="40%" cy="65%" fill="rgb(0, 183,255)"></circle>
+      <text x="40%" y="73%" text-anchor="middle" fill="#fff">#{{pos}}</text>
+    </svg>
+  </div>
+  <div class="col-md-8 step-guide">
+    <h2>{{title}}</h2>
+    <p>{{desc}}</p>
+  </div>
+  <div class="col-md-1 chevron-right">
+    <a href="#">
+      <i class="fa fa-chevron-right fa-4x" aria-hidden="true"></i>
+    </a>
+  </div>
+</div>
+
+{% endmacro %}
