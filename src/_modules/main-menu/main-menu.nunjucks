@@ -1,0 +1,13 @@
+<div class="main-menu">
+  <ul class="nav nav-pills">
+    <li role="presentation">
+      <a href="#contact-us">Contact us</a>
+    </li>
+    <li role="presentation">
+      <a href="#inspect-my-cv">Inspect my CV!</a>
+    </li>
+    <li role="presentation">
+      <a href="#about">About</a>
+    </li>
+  </ul>
+</div>

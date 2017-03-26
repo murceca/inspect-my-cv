@@ -1,23 +1,11 @@
 {% extends '_layouts/base.nunjucks' %}
 
-{% import "_modules/step-guide/step-guide.nunjucks" as stepGuide %}
+{% import '_modules/step-guide/step-guide.nunjucks' as stepGuide %}
 
 {% block content %}
   <div class="container-fluid">
     <div class="row">
-      <div class="main-menu">
-        <ul class="nav nav-pills">
-          <li role="presentation">
-            <a href="#contact-us">Contact us</a>
-          </li>
-          <li role="presentation">
-            <a href="#inspect-my-cv">Inspect my CV!</a>
-          </li>
-          <li role="presentation">
-            <a href="#about">About</a>
-          </li>
-        </ul>
-      </div>
+      {% include '_modules/main-menu/main-menu.nunjucks' %}
       <img class="logo" src="images/logo.png">
       <p class="title-about">
         Is your CV letting you down?<br>

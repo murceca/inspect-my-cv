@@ -9,6 +9,7 @@
 
 // Import Modules
 @import '../_modules/step-guide/step-guide';
+@import '../_modules/main-menu/main-menu';
 
 
 body {
@@ -24,28 +25,6 @@ body {
   height: auto;
   margin-top: $title-margin;
   padding: $title-padding;
-}
-
-.main-menu {
-  ul {
-    height: auto;
-    font-weight: bold;
-    font-size: 25px;
-    background-color: $bg-color;
-    padding: 25px;
-
-    li {
-      float: right;
-    }
-
-    a {
-      color: $white-color;
-
-      &:hover {
-        color: $gray-color;
-      }
-    }
-  }
 }
 
 .logo {
