@@ -1,4 +1,10 @@
-{% macro item(pos, title, desc, cls='') %}
+{% macro item(pos, title, desc, visible) %}
+
+{% if visible %}
+  {% set cls = '' %}
+{% else %}
+  {% set cls = 'hidden' %}
+{% endif %}
 
 <div class="row step-guide-item {{cls}}">
   <div class="col-md-1 chevron-left">
