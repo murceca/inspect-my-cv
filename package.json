@@ -2,6 +2,7 @@
   "name": "inspect-my-cv",
   "version": "0.0.1",
   "dependencies": {
+    "bootstrap-sass": "^3.3.7",
     "jquery": "~3.1.1",
     "normalize.css": "~5.0.0"
   },
@@ -45,7 +46,7 @@
     "gulp-sass": "~3.1.0",
     "js-yaml": "~3.8.1",
     "watchify": "~3.9.0 ",
-    "browserify" : "~14.1.0"
+    "browserify": "~14.1.0"
   },
   "scripts": {
     "clean-deps": "rimraf node_modules"
@@ -55,13 +56,10 @@
   },
   "//": "CUSTOM CONFIGURATION",
   "config": {
-    "//": "Local Server Settings",
+    "//": "Entry files",
     "host": "127.0.0.1",
     "port": "3000",
     "baseUrl": "./",
-    "//": "Gulp Task Directories",
-    "//": "NOTE: folders prefixed with an underscore (_) will have it removed when moved to build target (ex: src/_images -> build/images)",
-    "//": "NOTE: folders NOT prefixed with underscore (_) will be copied to build target 1 to 1 (ex: src/fonts -> build/fonts)",
     "directories": {
       "source": "src",
       "destination": "build",
@@ -74,7 +72,6 @@
       "scripts": "_scripts",
       "data": "_data"
     },
-    "//": "Entry files",
     "entries": {
       "js": "main**.js",
       "css": "main**.{sass,scss}"

@@ -1,15 +1,22 @@
 // Normalize Styles
-//@import 'node_modules/normalize.css/normalize';
-// Import Modules
-//@import '../_modules/link/link';
+@import 'node_modules/normalize.css/normalize';
+
+// Bootstrap
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+// Variables
 @import 'variables';
+
+// Import Modules
 @import '../_modules/step-guide/step-guide';
+
 
 body {
   overflow-x: hidden;
 }
 
 .block-title {
+  @extend .text-center;
   background-color: $bg-color;
   color: $white-color;
   font-size: $title-font;
@@ -17,7 +24,6 @@ body {
   height: auto;
   margin-top: $title-margin;
   padding: $title-padding;
-  text-align: center;
 }
 
 .main-menu {
