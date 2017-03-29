@@ -1,5 +1,4 @@
 {% macro item(avatarUrl, title, stars, feedback) %}
-
   <div class="row testimonials-client">
     <div class="col-md-3 user-photo">
       <img src="{{avatarUrl}}" alt="{{title}}">
