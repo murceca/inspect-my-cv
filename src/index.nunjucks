@@ -43,11 +43,7 @@
               How it works? - Our 5 Step Guide...
             </h1>
           </div>
-          <div class="step-guide-carousel">
-            {% for step in site.data.steps %}
-              {{ stepGuide.item(loop.index, step.title, step.desc, loop.first) }}
-            {% endfor %}
-          </div>
+          {{ stepGuide.carousel(site.data.steps) }}
         </div>
       </div>
     </div>
