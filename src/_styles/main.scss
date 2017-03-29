@@ -1,16 +1,13 @@
 // Normalize Styles
 @import 'node_modules/normalize.css/normalize';
-
 // Bootstrap
 @import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
-
 // Variables
 @import 'variables';
-
 // Import Modules
 @import '../_modules/step-guide/step-guide';
 @import '../_modules/main-menu/main-menu';
-
+@import '../_modules/testimonials/testimonials';
 
 body {
   overflow-x: hidden;
@@ -72,45 +69,6 @@ body {
 .testimonials {
   .testimonials-title {
     @extend .block-title;
-  }
-
-  .client {
-    margin: 30px 20px 50px 0;
-
-    .user-photo {
-      img {
-        margin: 20px 0 0 50px;
-        width: 200px;
-        height: 200px;
-      }
-    }
-
-    .chevron-opinion {
-      margin-top: 90px;
-      text-align: left;
-    }
-
-    .opinion {
-      h1 {
-        text-align: center;
-        color: $gray-color;
-        font-weight: bold;
-        margin-right: 15px;
-      }
-
-      p {
-        font-size: 18px;
-        text-align: justify;
-        margin-top: 10px;
-        color: $gray-color;
-      }
-
-      .fa-star {
-        color: gold;
-        float: right;
-        margin-right: 5px;
-      }
-    }
   }
 }
 
