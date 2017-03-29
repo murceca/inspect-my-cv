@@ -3,21 +3,18 @@
     <div class="col-md-3">
       <img class="user-photo" src="{{avatarUrl}}" alt="{{title}}">
     </div>
-    <div class="col-md-1">
-      <p class="chevron-opinion">
-        <i class="fa fa-chevron-right fa-4x" aria-hidden="true"></i>
-      </p>
-    </div>
-    <div class="col-md-8">
+    <div class="col-md-9">
       <h1 class="opinion-title">
         {{title}}
         {% for i in range(0, stars) %}
           <i class="fa fa-star" aria-hidden="true"></i>
         {% endfor %}
       </h1>
-      <p class="opinion-feedback">
-        {{feedback}}
-      </p>
+      <blockquote>
+        <p class="opinion-feedback">
+          {{feedback}}
+        </p>
+      </blockquote>
     </div>
   </div>
 {% endmacro %}
