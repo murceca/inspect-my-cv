@@ -1,7 +1,10 @@
 // Normalize Styles
-@import 'node_modules/normalize.css/normalize'; // Bootstrap
-@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap'; // Variables
-@import 'variables'; // Import Modules
+@import 'node_modules/normalize.css/normalize';
+// Bootstrap
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+// Variables
+@import 'variables';
+// Import Modules
 @import '../_modules/step-guide/step-guide';
 @import '../_modules/main-menu/main-menu';
 @import '../_modules/testimonials/testimonials';

@@ -2,7 +2,7 @@
 
 {% import '_modules/step-guide/step-guide.nunjucks' as stepGuide %}
 
-{% import '_modules/testimonials/testimonials.nunjucks' as testimonialsClient %}
+{% import '_modules/testimonials/testimonials.nunjucks' as testimonials %}
 
 {% block content %}
   <div class="container-fluid">
@@ -57,8 +57,8 @@
           <i class="fa fa-envelope-o" aria-hidden="true"></i>
           Testimonials
         </h1>
-        {% for testimonials in site.data.testimonials %}
-          {{ testimonialsClient.item(testimonials.avatarUrl, testimonials.title, testimonials.stars, testimonials.feedback) }}
+        {% for testimonial in site.data.testimonials %}
+          {{ testimonials.item(testimonial.avatarUrl, testimonial.title, testimonial.stars, testimonial.feedback) }}
         {% endfor %}
       </div>
     </div>

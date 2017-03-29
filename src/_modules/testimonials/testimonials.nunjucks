@@ -1,21 +1,21 @@
 {% macro item(avatarUrl, title, stars, feedback) %}
   <div class="row testimonials-client">
-    <div class="col-md-3 user-photo">
-      <img src="{{avatarUrl}}" alt="{{title}}">
+    <div class="col-md-3">
+      <img class="user-photo" src="{{avatarUrl}}" alt="{{title}}">
     </div>
-    <div class="col-md-1 chevron-opinion">
-      <p>
+    <div class="col-md-1">
+      <p class="chevron-opinion">
         <i class="fa fa-chevron-right fa-4x" aria-hidden="true"></i>
       </p>
     </div>
-    <div class="col-md-8 opinion">
-      <h1>
+    <div class="col-md-8">
+      <h1 class="opinion-title">
         {{title}}
         {% for i in range(0, stars) %}
           <i class="fa fa-star" aria-hidden="true"></i>
         {% endfor %}
       </h1>
-      <p>
+      <p class="opinion-feedback">
         {{feedback}}
       </p>
     </div>
