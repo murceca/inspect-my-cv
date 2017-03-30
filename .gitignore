@@ -9,11 +9,11 @@ tmp
 # OS and other
 .DS_Store
 *.log
-.exports
+*.exports
 
 # Python byte-compiled / optimized / DLL files
 __pycache__/
-*.py[cod
+*.py[cod]
 
 # Python virtual environment
 env
