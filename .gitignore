@@ -9,6 +9,7 @@ tmp
 # OS and other
 .DS_Store
 *.log
+.exports
 
 # Python byte-compiled / optimized / DLL files
 __pycache__/
