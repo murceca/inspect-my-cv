@@ -1,6 +1,22 @@
+# NPM modules
 node_modules
-*.log
+
+# Front-end build directories
 build
 tmp
-.grunt
+
+
+# OS and other
 .DS_Store
+*.log
+
+# Python byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod
+
+# Python virtual environment
+env
+
+# PIP installer logs
+pip-log.txt
+pip-delete-this-directory.txt

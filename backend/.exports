@@ -1,0 +1,5 @@
+export INSPECT_CV_EMAIL_SENDER="example@mail.com"
+export INSPECT_CV_EMAIL_RECIPIENTS="example@mail.com"
+export INSPECT_CV_EMAIL_SERVER="example.com:587"
+export INSPECT_CV_EMAIL_LOGIN="login"
+export INSPECT_CV_EMAIL_PASSWORD="password"
