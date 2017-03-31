@@ -9,7 +9,10 @@
   </div>
   <div class="form-group">
     <label for="contact-us-email">Email</label>
-    <input type="text" class="form-control" placeholder="you@youremail.com" id="contact-us-email">
+    <div class="input-group">
+      <span class="input-group-addon">@</span>
+      <input type="text" class="form-control" placeholder="you@youremail.com" id="contact-us-email">
+    </div>
   </div>
   <div class="form-group">
     <label for="contact-us-message">Message</label>

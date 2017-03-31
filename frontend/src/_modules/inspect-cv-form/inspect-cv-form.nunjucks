@@ -10,15 +10,17 @@
     Upload your CV for a free, confidential review from a trusted CV expert.
   </p>
   <form class="form-inspect">
-    <p>Email</p>
-    <input type="text" class="form-control" placeholder="you@youremail.com">
-    <label class="btn btn-default btn-file">
-      Choose CV..
-      <input type="file">
-    </label>
-    <p>Message</p>
-    <textarea class="form-control" rows="3" placeholder="Your message here"></textarea>
-    <button type="reset" class="btn">Cancel</button>
-    <button id="submit-btn" type="submit" class="btn">Submit</button>
+    <div class="form-group">
+      <p>Email</p>
+      <input type="text" class="form-control" placeholder="you@youremail.com">
+      <label class="btn btn-default btn-file">
+        Choose CV..
+        <input type="file">
+      </label>
+      <p>Message</p>
+      <textarea class="form-control" rows="3" placeholder="Your message here"></textarea>
+      <button type="reset" class="btn">Cancel</button>
+      <button id="submit-btn" type="submit" class="btn">Submit</button>
+    </div>
   </form>
 </div>
