@@ -37,26 +37,25 @@ Inspect my CV is application to improve your resume.
 4. Start python application: `python app.py`
 5. Application will be available by `localhost:8080` address
 
-## API endpoints:
+## API endpoints
 
 ### Root URL - does nothing
-URL: `/`
-METHOD: GET
+- URL: `/`
+- METHOD: GET
 
 ### Inspect CV - handles inspect-cv form
-URL: `/inspect_cv`
-METHOD: POST
-PARAMS: JSON object {email, file, message}
-RETURNS: JSON object {status}
+- URL: `/inspect_cv`
+- METHOD: POST
+- PARAMS: JSON object {email, file, message}
+- RETURNS: JSON object {status}
 
 ### Contact - handles contact-us form
-URL: `/contact`
-METHOD: POST
-PARAMS: JSON object {name, email, phone, message}
-RETURNS: JSON object {status}
+- URL: `/contact`
+- METHOD: POST
+- PARAMS: JSON object {name, email, phone, message}
+- RETURNS: JSON object {status}
 
 ### Email templates
-
 
 - `contact_request/subject.html`
 - `contact_request/body.html`
