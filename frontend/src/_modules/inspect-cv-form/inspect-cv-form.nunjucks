@@ -11,14 +11,20 @@
   </p>
   <form class="form-inspect">
     <div class="form-group">
-      <p>Email</p>
-      <input type="text" class="form-control" placeholder="you@youremail.com">
+      <label class="label" for="email-input">Email</label>
+      <input type="text" class="form-control" placeholder="you@youremail.com" id="email-input">
+    </div>
+    <div class="form-group">
       <label class="btn btn-default btn-file">
         Choose CV..
         <input type="file">
       </label>
-      <p>Message</p>
-      <textarea class="form-control" rows="3" placeholder="Your message here"></textarea>
+    </div>
+    <div class="form-group">
+      <label class="label" for="message-area">Message</label>
+      <textarea class="form-control" id="message-area" rows="3" placeholder="Your message here"></textarea>
+    </div>
+    <div class="button-group">
       <button type="reset" class="btn">Cancel</button>
       <button id="submit-btn" type="submit" class="btn">Submit</button>
     </div>

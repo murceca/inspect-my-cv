@@ -4,14 +4,14 @@
     margin-top: 60px;
   }
 
-  > h1 {
+   h1 {
     font-size: 60px;
     padding-top: 20px;
     text-align: center;
     color: $gray-color;
   }
 
-  > p {
+   p {
     font-size: 30px;
     text-align: center;
     color: $gray-color;
@@ -21,7 +21,7 @@
     margin: 30px 0 70px 400px;
     width: 510px;
 
-    p {
+    .label {
       padding: 5px 5px 0 0;
       color: $gray-color;
       font-weight: bold;
