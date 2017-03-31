@@ -59,3 +59,9 @@ Inspect my CV is application to improve your resume.
 
 - `contact_request/subject.html`
 - `contact_request/body.html`
+- `contact_response/subject.html`
+- `contact_response/body.html`
+- `inspect_cv_request/subject.html`
+- `inspect_cv_request/body.html`
+- `inspect_cv_response/subject.html`
+- `inspect_cv_response/body.html`
