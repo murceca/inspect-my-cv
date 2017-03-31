@@ -1,0 +1,81 @@
+.inspectmycv {
+  .inspect-title {
+    @extend .block-title;
+    margin-top: 60px;
+  }
+
+  > h1 {
+    font-size: 60px;
+    padding-top: 20px;
+    text-align: center;
+    color: $gray-color;
+  }
+
+  > p {
+    font-size: 30px;
+    text-align: center;
+    color: $gray-color;
+  }
+
+  .form-inspect {
+    margin: 30px 0 70px 400px;
+    width: 510px;
+
+    p {
+      padding: 5px 5px 0 0;
+      color: $gray-color;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .btn-file {
+      position: relative;
+      overflow: hidden;
+      margin: 10px 0;
+      color: $gray-color;
+      font-weight: bold;
+      padding: 7px;
+      font-size: 14px;
+
+      input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        opacity: 0.2;
+        outline: none;
+        background: $gray-color;
+        cursor: inherit;
+        display: block;
+      }
+    }
+
+    button[type=reset],
+    button[type=submit] {
+      border: none;
+      color: $white-color;
+      padding: 10px 20px;
+      text-decoration: none;
+      margin-top: 15px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    button[type=reset] {
+      margin-left: 305px;
+    }
+
+    button[type=reset] {
+      background-color: $gray-color;
+    }
+
+    button[type=submit] {
+      background-color: $bg-color;
+      margin-left: 10px;
+    }
+  }
+}

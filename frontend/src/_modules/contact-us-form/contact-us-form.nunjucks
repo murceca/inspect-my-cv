@@ -1,0 +1,22 @@
+<form class="contact-us-form">
+  <div class="form-group">
+    <label for="contact-us-username">Name</label>
+    <input type="text" class="form-control" placeholder="John Snow" id="contact-us-username">
+  </div>
+  <div class="form-group">
+    <label for="contact-us-phone">Telephone</label>
+    <input type="text" class="form-control" placeholder="01234567890" id="contact-us-phone">
+  </div>
+  <div class="form-group">
+    <label for="contact-us-email">Email</label>
+    <input type="text" class="form-control" placeholder="you@youremail.com" id="contact-us-email">
+  </div>
+  <div class="form-group">
+    <label for="contact-us-message">Message</label>
+    <textarea class="form-control" rows="3" placeholder="Your message here" id="contact-us-message"></textarea>
+  </div>
+  <div class="buttons-group">
+    <button type="reset" class="btn cancel">Cancel</button>
+    <button type="submit" class="btn send">Send</button>
+  </div>
+</form>

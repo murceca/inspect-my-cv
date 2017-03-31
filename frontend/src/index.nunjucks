@@ -59,30 +59,7 @@
       </div>
     </div>
     <div class="row">
-      <div id="inspect-my-cv" class="inspectmycv">
-        <div class="inspect-title">
-          <i class="fa fa-share-square-o" aria-hidden="true"></i>
-          Inspect my CV!
-        </div>
-        <h1>
-          Take a FREE CV Review
-        </h1>
-        <p class="text-primary">
-          Upload your CV for a free, confidential review from a trusted CV expert.
-        </p>
-        <div class="form-inspect">
-          <p>Email</p>
-          <input type="text" class="form-control" placeholder="you@youremail.com">
-          <label class="btn btn-default btn-file">
-            Choose CV..
-            <input type="file">
-          </label>
-          <p>Message</p>
-          <textarea class="form-control" rows="3" placeholder="Your message here"></textarea>
-          <button type="reset" class="btn">Cancel</button>
-          <button id="submit-btn" type="submit" class="btn">Submit</button>
-        </div>
-      </div>
+      {% include '_modules/inspect-cv-form/inspect-cv-form.nunjucks' %}
     </div>
     <div class="row">
       <div id="contact-us" class="contact-us">
@@ -107,28 +84,7 @@
             </p>
           </div>
           <div class="col-md-6">
-            <form class="contact-us-form">
-              <div class="form-group">
-                <label for="contact-us-username">Name</label>
-                <input type="text" class="form-control" placeholder="John Snow" id="contact-us-username">
-              </div>
-              <div class="form-group">
-                <label for="contact-us-phone">Telephone</label>
-                <input type="text" class="form-control" placeholder="01234567890" id="contact-us-phone">
-              </div>
-              <div class="form-group">
-                <label for="contact-us-email">Email</label>
-                <input type="text" class="form-control" placeholder="you@youremail.com" id="contact-us-email">
-              </div>
-              <div class="form-group">
-                <label for="contact-us-message">Message</label>
-                <textarea class="form-control" rows="3" placeholder="Your message here" id="contact-us-message"></textarea>
-              </div>
-              <div class="buttons-group">
-                <button type="reset" class="btn cancel">Cancel</button>
-                <button type="submit" class="btn send">Send</button>
-              </div>
-            </form>
+            {% include '_modules/contact-us-form/contact-us-form.nunjucks' %}
           </div>
         </div>
       </div>

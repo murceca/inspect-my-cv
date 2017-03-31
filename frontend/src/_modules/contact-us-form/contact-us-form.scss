@@ -1,0 +1,41 @@
+.contact-us-form {
+  margin: 30px 20px 0 0;
+
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    color: $gray-color;
+    margin: 0;
+  }
+
+  .form-control {
+    margin: 5px 0;
+  }
+
+  .buttons-group {
+    text-align: right;
+    padding-right: 10px;
+
+    .btn {
+      border: none;
+      width: 100px;
+      margin-bottom: 20px;
+      color: $white-color;
+      padding: 10px 20px;
+      text-decoration: none;
+      margin-top: 15px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .cancel {
+      background-color: $gray-color;
+    }
+
+    .send {
+      background-color: $bg-color;
+      margin-left: 15px;
+    }
+  }
+}

@@ -8,6 +8,8 @@
 @import '../_modules/step-guide/step-guide';
 @import '../_modules/main-menu/main-menu';
 @import '../_modules/testimonials/testimonials';
+@import '../_modules/inspect-cv-form/inspect-cv-form';
+@import '../_modules/contact-us-form/contact-us-form';
 
 body {
   overflow-x: hidden;
@@ -72,88 +74,6 @@ body {
   }
 }
 
-.inspectmycv {
-  .inspect-title {
-    @extend .block-title;
-    margin-top: 60px;
-  }
-
-  > h1 {
-    font-size: 60px;
-    padding-top: 20px;
-    text-align: center;
-    color: $gray-color;
-  }
-
-  > p {
-    font-size: 30px;
-    text-align: center;
-    color: $gray-color;
-  }
-
-  .form-inspect {
-    margin: 30px 0 70px 400px;
-    width: 510px;
-
-    p {
-      padding: 5px 5px 0 0;
-      color: $gray-color;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    .btn-file {
-      position: relative;
-      overflow: hidden;
-      margin: 10px 0;
-      color: $gray-color;
-      font-weight: bold;
-      padding: 7px;
-      font-size: 14px;
-
-      input[type=file] {
-        position: absolute;
-        top: 0;
-        right: 0;
-        min-width: 100%;
-        min-height: 100%;
-        font-size: 100px;
-        text-align: right;
-        opacity: 0.2;
-        outline: none;
-        background: $gray-color;
-        cursor: inherit;
-        display: block;
-      }
-    }
-
-    button[type=reset],
-    button[type=submit] {
-      border: none;
-      color: $white-color;
-      padding: 10px 20px;
-      text-decoration: none;
-      margin-top: 15px;
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    button[type=reset] {
-      margin-left: 305px;
-    }
-
-    button[type=reset] {
-      background-color: $gray-color;
-    }
-
-    button[type=submit] {
-      background-color: $bg-color;
-      margin-left: 10px;
-    }
-  }
-}
-
 .contact-us {
   .contact-us-title {
     @extend .block-title;
@@ -180,48 +100,6 @@ body {
     .fa {
       color: $prime-color;
       padding-right: 10px;
-    }
-  }
-
-  .contact-us-form {
-    margin-top: 30px;
-
-    label {
-      font-size: 16px;
-      font-weight: bold;
-      color: $gray-color;
-      margin: 0;
-    }
-
-    .form-control {
-      margin: 5px 0;
-    }
-
-    .buttons-group {
-      text-align: right;
-      padding-right: 15px;
-
-      .btn {
-        border: none;
-        width: 100px;
-        margin-bottom: 20px;
-        color: $white-color;
-        padding: 10px 20px;
-        text-decoration: none;
-        margin-top: 15px;
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 16px;
-      }
-
-      .cancel {
-        background-color: $gray-color;
-      }
-
-      .send {
-        background-color: $bg-color;
-        margin-left: 15px;
-      }
     }
   }
 }
