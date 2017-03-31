@@ -7,13 +7,13 @@
    h1 {
     font-size: 60px;
     padding-top: 20px;
-    text-align: center;
+    @extend .text-center;
     color: $gray-color;
   }
 
    p {
     font-size: 30px;
-    text-align: center;
+    @extend .text-center;
     color: $gray-color;
   }
 
@@ -22,7 +22,7 @@
     width: 510px;
 
     .label {
-      padding: 5px 5px 0 0;
+      padding: 5px 5px 5px 0;
       color: $gray-color;
       font-weight: bold;
       font-size: 16px;
@@ -31,7 +31,7 @@
     .btn-file {
       position: relative;
       overflow: hidden;
-      margin: 10px 0;
+      margin: 5px 0;
       color: $gray-color;
       font-weight: bold;
       padding: 7px;
@@ -44,7 +44,7 @@
         min-width: 100%;
         min-height: 100%;
         font-size: 100px;
-        text-align: right;
+        @extend .text-right;
         opacity: 0.2;
         outline: none;
         background: $gray-color;

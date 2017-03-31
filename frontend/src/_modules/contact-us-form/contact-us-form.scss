@@ -9,7 +9,7 @@
   }
 
   .buttons-group {
-    text-align: right;
+    @extend .text-right;
     padding-right: 10px;
 
     .btn {

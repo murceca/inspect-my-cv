@@ -8,7 +8,7 @@
   }
 
   .opinion-title {
-    text-align: center;
+    @extend .text-center;
     color: $gray-color;
     font-weight: bold;
     margin-right: 15px;
@@ -16,13 +16,13 @@
 
   .opinion-feedback {
     font-size: 18px;
-    text-align: justify;
+    @extend .text-justify;
     color: $gray-color;
   }
 
   .fa-star {
     color: gold;
-    float: right;
+    @extend .pull-right;
     margin-right: 5px;
   }
 }

@@ -7,7 +7,7 @@
     padding: 25px;
 
     li {
-      float: right;
+      @extend .pull-right;
     }
 
     a {
