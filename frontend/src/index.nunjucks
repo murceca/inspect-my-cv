@@ -97,24 +97,33 @@
         </div>
         <div class="col-md-6">
           <ul class="list-inline social-links-group">
-            <li><a href="https://plus.google.com/u/0/112643538224871282165" class="social-link">
-              <i class="fa fa-google-plus-square" aria-hidden="true"></i>
-            </a></li>
-            <li><a href="https://github.com/murceca" class="social-link">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a></li>
-            <li><a href="https://www.linkedin.com/in/grischuksv/" class="social-link">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a></li>
-            <li><a href="https://twitter.com/r_svetulik" class="social-link">
-              <i class="fa fa-twitter-square" aria-hidden="true"></i>
-            </a></li>
+            <li>
+              <a href="https://plus.google.com/u/0/112643538224871282165" class="social-link">
+                <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/murceca" class="social-link">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/grischuksv/" class="social-link">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/r_svetulik" class="social-link">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
       <div class="row">
         <footer class="footer">
-          &copy; Inspect-my-CV 2017</footer>
+          &copy; Inspect-my-CV 2017
+        </footer>
       </div>
     </div>
   {% endblock %}
