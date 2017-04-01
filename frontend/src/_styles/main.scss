@@ -121,10 +121,6 @@ body {
       text-decoration: none;
       color: inherit;
 
-      & + .social-link {
-        margin-left: 15px;
-      }
-
       &:hover {
         color: $gray-color;
       }
