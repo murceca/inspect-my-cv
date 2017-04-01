@@ -18,6 +18,11 @@ Inspect my CV is application to improve your resume.
 2. Start web-server `gulp serve` or just build project `gulp build`
 3. Application will be available by `localhost:3000` address
 
+## How to test
+
+We are using JavaScript validation tool ESLint.
+You can run ESLint using `gulp test` command.
+
 ---
 
 # Back-end application
