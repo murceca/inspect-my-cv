@@ -23,3 +23,29 @@ body {
     @extend .block-title;
   }
 }
+
+.buttons-group {
+  @extend .text-right;
+  padding-right: 3px;
+
+  .btn {
+    border: none;
+    margin-bottom: 20px;
+    color: $white-color;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    min-width: 100px;
+  }
+
+  .cancel {
+    background-color: $gray-color;
+  }
+
+  .send {
+    background-color: $bg-color;
+  }
+}

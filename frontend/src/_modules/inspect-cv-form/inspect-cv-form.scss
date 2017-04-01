@@ -4,14 +4,14 @@
     margin-top: 60px;
   }
 
-   h1 {
+   .promo-title {
     font-size: 60px;
     padding-top: 20px;
     @extend .text-center;
     color: $gray-color;
   }
 
-   p {
+   .promo-desc {
     font-size: 30px;
     @extend .text-center;
     color: $gray-color;
@@ -51,31 +51,6 @@
         cursor: inherit;
         display: block;
       }
-    }
-
-    button[type=reset],
-    button[type=submit] {
-      border: none;
-      color: $white-color;
-      padding: 10px 20px;
-      text-decoration: none;
-      margin-top: 15px;
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    button[type=reset] {
-      margin-left: 305px;
-    }
-
-    button[type=reset] {
-      background-color: $gray-color;
-    }
-
-    button[type=submit] {
-      background-color: $bg-color;
-      margin-left: 10px;
     }
   }
 }
