@@ -1,0 +1,25 @@
+body {
+  overflow-x: hidden;
+}
+
+.logo {
+  position: relative;
+  top: -60px;
+  left: 30px;
+  width: 215px;
+  height: 130px;
+}
+
+.step {
+  margin: 70px 0;
+
+  .step-title {
+    @extend .block-title;
+  }
+}
+
+.testimonials {
+  .testimonials-title {
+    @extend .block-title;
+  }
+}

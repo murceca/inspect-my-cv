@@ -1,0 +1,29 @@
+.contact-us {
+  .contact-us-title {
+    @extend .block-title;
+  }
+
+  .contact-us-p {
+    font-size: 45px;
+    font-weight: bold;
+    color: $prime-color;
+    margin: 40px 0 0 130px;
+  }
+
+  .contact-list {
+    .email,
+    .location,
+    .telephone {
+      margin: 25px 0 0 50px;
+      font-weight: bold;
+      font-size: 27px;
+      color: $gray-color;
+      padding: 5px;
+    }
+
+    .fa {
+      color: $prime-color;
+      padding-right: 10px;
+    }
+  }
+}

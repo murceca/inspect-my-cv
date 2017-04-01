@@ -1,0 +1,23 @@
+.social {
+  background-color: $prime-color;
+
+  .social-title {
+    @extend .block-title;
+    text-align: left;
+    margin: 0 0 0 15px;
+  }
+
+  .social-links-group {
+    @extend .block-title;
+    margin-top: 0;
+
+    .social-link {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        color: $gray-color;
+      }
+    }
+  }
+}

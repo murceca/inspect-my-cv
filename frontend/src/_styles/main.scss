@@ -2,136 +2,17 @@
 @import 'node_modules/normalize.css/normalize';
 // Bootstrap
 @import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
-// Variables
+// Variables and helpers
 @import 'imports/variables';
+@import 'imports/helpers';
 // Import Modules
 @import '../_modules/step-guide/step-guide';
 @import '../_modules/main-menu/main-menu';
 @import '../_modules/testimonials/testimonials';
 @import '../_modules/inspect-cv-form/inspect-cv-form';
 @import '../_modules/contact-us-form/contact-us-form';
-
-body {
-  overflow-x: hidden;
-}
-
-.block-title {
-  @extend .text-center;
-  background-color: $bg-color;
-  color: $white-color;
-  font-size: $title-font;
-  font-weight: bold;
-  height: auto;
-  margin-top: $title-margin;
-  padding: $title-padding;
-}
-
-.logo {
-  position: relative;
-  top: -60px;
-  left: 30px;
-  width: 215px;
-  height: 130px;
-}
-
-.title-about {
-  padding: 0;
-  margin: 15px 15px 0 0;
-  @extend .text-right;
-  @extend .pull-right;
-  font-size: 34px;
-  font-weight: bold;
-  color: $gray-color;
-}
-
-.text-about {
-  @extend .text-justify;
-  font-size: 18px;
-  color: $gray-color;
-  padding: 10px 30px;
-}
-
-.video-about {
-  video {
-    margin-top: 10px;
-    @extend .text-right;
-    width: 650px;
-    height: 350px;
-  }
-}
-
-.step {
-  margin: 70px 0;
-
-  .step-title {
-    @extend .block-title;
-  }
-}
-
-.testimonials {
-  .testimonials-title {
-    @extend .block-title;
-  }
-}
-
-.contact-us {
-  .contact-us-title {
-    @extend .block-title;
-  }
-
-  .contact-us-p {
-    font-size: 45px;
-    font-weight: bold;
-    color: $prime-color;
-    margin: 40px 0 0 130px;
-  }
-
-  .contact-list {
-    .email,
-    .location,
-    .telephone {
-      margin: 25px 0 0 50px;
-      font-weight: bold;
-      font-size: 27px;
-      color: $gray-color;
-      padding: 5px;
-    }
-
-    .fa {
-      color: $prime-color;
-      padding-right: 10px;
-    }
-  }
-}
-
-.social {
-  background-color: $prime-color;
-
-  .social-title {
-    @extend .block-title;
-    @extend .text-left;
-    margin: 0 0 0 15px;
-  }
-
-  .social-links-group {
-    @extend .block-title;
-    margin-top: 0;
-
-    .social-link {
-      text-decoration: none;
-      color: inherit;
-
-      &:hover {
-        color: $gray-color;
-      }
-    }
-  }
-}
-
-.footer {
-  @extend .text-center;
-  font-weight: bold;
-  font-size: 14px;
-  padding: 5px;
-  color: $gray-color;
-}
+@import 'imports/common';
+@import 'imports/about-block';
+@import 'imports/contact-us';
+@import 'imports/social-block';
+@import 'imports/footer';

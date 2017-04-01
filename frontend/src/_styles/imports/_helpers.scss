@@ -1,0 +1,10 @@
+.block-title {
+  @extend .text-center;
+  background-color: $bg-color;
+  color: $white-color;
+  font-size: $title-font;
+  font-weight: bold;
+  height: auto;
+  margin-top: $title-margin;
+  padding: $title-padding;
+}
