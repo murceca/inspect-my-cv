@@ -1,14 +1,20 @@
 'use strict';
 
+import proxyMiddleware from 'http-proxy-middleware';
+
 export default function(gulp, plugins, args, config, taskTarget, browserSync) {
   // BrowserSync
   gulp.task('browserSync', () => {
+    const apiProxy = proxyMiddleware('/api', {
+      target: 'http://localhost:8080'
+    });
     browserSync.init({
       open: args.open ? 'local' : false,
       startPath: config.baseUrl,
       port: config.port || 3000,
       server: {
         baseDir: taskTarget,
+        middleware: [apiProxy],
         routes: (() => {
           let routes = {};
 
