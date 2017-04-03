@@ -2,13 +2,10 @@
 
 import $ from 'jquery';
 import Carousel from '../_modules/step-guide/step-guide';
+import initContactForm from '../_modules/contact-us-form/contact-us-form';
 
 $(() => {
   const carousel = new Carousel();
   carousel.init();
-
-  $( "#contact-us" ).submit(function( event ) {
-    alert( "Handler for .submit() called." );
-    event.preventDefault();
-  });
+  initContactForm();
 });
