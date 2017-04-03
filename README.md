@@ -45,17 +45,17 @@ You can run ESLint using `gulp test` command.
 ## API endpoints
 
 ### Root URL - does nothing
-- URL: `/`
+- URL: `/api`
 - METHOD: GET
 
 ### Inspect CV - handles inspect-cv form
-- URL: `/inspect_cv`
+- URL: `/api/inspect_cv`
 - METHOD: POST
-- PARAMS: JSON object {email, file, message}
+- PARAMS: JSON object {email, file, message, accept_terms}
 - RETURNS: JSON object {status}
 
 ### Contact - handles contact-us form
-- URL: `/contact`
+- URL: `/api/contact`
 - METHOD: POST
 - PARAMS: JSON object {name, email, phone, message}
 - RETURNS: JSON object {status}
