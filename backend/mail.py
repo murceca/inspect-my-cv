@@ -1,4 +1,4 @@
-import smtplib
+from smtplib import SMTP_SSL
 from os import getenv
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -24,28 +24,27 @@ class Template:
 
 def send_email(subject, text, recipients=''):
     status = True
+    # Get global variables
+    sender = getenv('INSPECT_CV_EMAIL_SENDER')
+    if not recipients:
+        recipients = getenv('INSPECT_CV_EMAIL_RECIPIENTS')
+    serverUrl = getenv('INSPECT_CV_EMAIL_SERVER')
+    login = getenv('INSPECT_CV_EMAIL_LOGIN')
+    password = getenv('INSPECT_CV_EMAIL_PASSWORD')
+    # Build email message
+    msg = MIMEMultipart('alternative')
+    msg['Subject'] = subject
+    msg['From'] = sender
+    msg['To'] = recipients
+    msg.attach(MIMEText(text, 'html'))
     try:
-        # Get global variables
-        sender = getenv('INSPECT_CV_EMAIL_SENDER')
-        if not recipients:
-            recipients = getenv('INSPECT_CV_EMAIL_RECIPIENTS')
-        serverUrl = getenv('INSPECT_CV_EMAIL_SERVER')
-        login = getenv('INSPECT_CV_EMAIL_LOGIN')
-        password = getenv('INSPECT_CV_EMAIL_PASSWORD')
-        # Build email message
-        msg = MIMEMultipart('alternative')
-        msg['Subject'] = subject
-        msg['From'] = sender
-        msg['To'] = recipients
-        msg.attach(MIMEText(text, 'html'))
         # Connect to SMTP server
-        server = smtplib.SMTP(serverUrl)
-        server.ehlo()
-        server.starttls()
-        server.login(login, password)
+        conn = SMTP_SSL(serverUrl)
+        conn.login(login, password)
         # Send message and close connection
-        server.sendmail(sender, recipients, msg.as_string())
-        server.quit()
+        conn.sendmail(sender, recipients, msg.as_string())
     except:
         status = False
+    finally:
+        conn.close()
     return status
