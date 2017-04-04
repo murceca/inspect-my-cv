@@ -1,7 +1,8 @@
 // Normalize Styles
 @import 'node_modules/normalize.css/normalize';
-// Bootstrap
+// Plugins
 @import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'node_modules/sweetalert/dist/sweetalert';
 // Variables and helpers
 @import 'imports/variables';
 @import 'imports/helpers';

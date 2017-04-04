@@ -1,7 +1,9 @@
 'use strict';
 
+import sweetAlert from 'sweetalert';
+
 const initForm = () => {
-  $('#contact-us').on('submit', function (event) {
+  $('.contact-us-form').on('submit', function (event) {
     event.preventDefault();
     const $form = $(this);
     $.ajax({
@@ -16,7 +18,12 @@ const initForm = () => {
         message: $form.find('#contact-us-message').val()
       })
     }).done((data) => {
-      console.log('done!', data.status);
+      if (data.success) {
+        sweetAlert('Success', 'Your message was sent. Thanks!', 'success');
+        $form.trigger('reset');
+      } else {
+        sweetAlert('Oops...', 'We\'re not able process your request! Please try again later.', 'error');
+      }
     });
   });
 };
