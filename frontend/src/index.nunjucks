@@ -8,7 +8,7 @@
   <div class="container-fluid">
     <div class="row">
       {% include '_modules/main-menu/main-menu.nunjucks' %}
-      <img class="logo img-responsive" src="images/logo.png">
+      <img class="logo" src="images/logo.png">
       <p class="title-about">
         Is your CV letting you down?<br>
         We have the solution!
