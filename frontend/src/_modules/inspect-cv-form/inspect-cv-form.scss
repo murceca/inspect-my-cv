@@ -1,60 +1,37 @@
-.inspectmycv {
+.form-inspect {
+  font-size: 14px;
 
-  .inspect-title {
-    @extend .block-title;
-    margin-top: 60px;
+  .label {
+    padding: 5px 5px 5px 0;
+    color: $gray-color;
+    font-weight: bold;
+    font-size: 16px;
   }
 
-   .promo-title {
-    font-size: 60px;
-    padding-top: 20px;
-    @extend .text-center;
+  .checkbox {
     color: $gray-color;
   }
 
-   .promo-desc {
-    font-size: 30px;
-    @extend .text-center;
+  .btn-file {
+    position: relative;
+    overflow: hidden;
+    margin: 5px 0;
     color: $gray-color;
-  }
+    font-weight: bold;
+    padding: 7px;
 
-  .form-inspect {
-
-    .label {
-      padding: 5px 5px 5px 0;
-      color: $gray-color;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    .checkbox {
-      font-size: 14px;
-      color: $gray-color;
-    }
-
-    .btn-file {
-      position: relative;
-      overflow: hidden;
-      margin: 5px 0;
-      color: $gray-color;
-      font-weight: bold;
-      padding: 7px;
-      font-size: 14px;
-
-      input[type=file] {
-        position: absolute;
-        top: 0;
-        right: 0;
-        min-width: 100%;
-        min-height: 100%;
-        font-size: 100px;
-        @extend .text-right;
-        opacity: 0.2;
-        outline: none;
-        background: $gray-color;
-        cursor: inherit;
-        display: block;
-      }
+    input[type=file] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      min-width: 100%;
+      min-height: 100%;
+      font-size: 100px;
+      opacity: 0.2;
+      outline: none;
+      background: $gray-color;
+      cursor: inherit;
+      display: block;
     }
   }
 }

@@ -49,3 +49,21 @@ body {
     background-color: $bg-color;
   }
 }
+
+.inspect-title {
+  @extend .block-title;
+  margin-top: 60px;
+}
+
+.inspect-promo-title {
+  @extend .text-center;
+  font-size: 60px;
+  padding-top: 20px;
+  color: $gray-color;
+}
+
+.inspect-promo-desc {
+  @extend .text-center;
+  font-size: 30px;
+  color: $gray-color;
+}
