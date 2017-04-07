@@ -6,7 +6,7 @@
   <div class="form-group">
     <label class="btn btn-default btn-file">
       Choose CV..
-      <input type="file">
+      <input type="file" required>
     </label>
   </div>
   <div class="checkbox">
