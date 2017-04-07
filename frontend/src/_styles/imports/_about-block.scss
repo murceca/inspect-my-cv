@@ -1,8 +1,8 @@
 .title-about {
-  padding: 0;
-  margin: 15px 15px 0 0;
   @extend .text-right;
   @extend .pull-right;
+  padding: 0;
+  margin: 15px 15px 0 0;
   font-size: 34px;
   font-weight: bold;
   color: $gray-color;
@@ -15,11 +15,8 @@
   padding: 10px 30px;
 }
 
-.video-about {
-  video {
-    margin-top: 10px;
-    @extend .text-right;
-    width: 650px;
-    height: 350px;
-  }
+video {
+  margin-top: 10px;
+  width: 650px;
+  height: 350px;
 }

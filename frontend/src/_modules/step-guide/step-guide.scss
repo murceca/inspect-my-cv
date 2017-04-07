@@ -1,21 +1,21 @@
 .step-guide-carousel {
   .step-guide-item {
-    text {
-      font-size: 35px;
+    .circle {
+      @extend .text-center;
+      border-radius: 50%;
+      background-color: $prime-color;
+      color: $gray-color;
       font-weight: bold;
+      font-size: 30px;
+      height: 100px;
+      width: 100px;
+      margin-top: 45px;
+      padding: 27px 15px 0;
     }
 
     .fa-chevron-left,
     .fa-chevron-right {
       color: $gray-color;
-    }
-
-    .chevron-left {
-      margin-top: 70px;
-      @extend .text-center;
-    }
-
-    .chevron-right {
       margin-top: 70px;
       @extend .text-center;
     }
@@ -31,7 +31,7 @@
       p {
         margin-top: 20px;
         font-size: 18px;
-        @extend .text-justify;
+        @extend .text-center;
         color: $gray-color;
       }
     }

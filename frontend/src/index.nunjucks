@@ -35,16 +35,16 @@
           Sorry, your browser doesn't support HTML5 video.
         </video>
       </div>
-      <div class="col-md-12">
-        <div class="step">
-          <div class="row">
-            <h1 class="step-title">
-              <i class="fa fa-cogs" aria-hidden="true"></i>
-              How it works? - Our 5 Step Guide...
-            </h1>
-          </div>
-          {{ stepGuide.carousel(site.data.steps) }}
+    </div>
+    <div class="row">
+      <div class="col-md-12 step">
+        <div class="row">
+          <h1 class="step-title">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            How it works? - Our 5 Step Guide...
+          </h1>
         </div>
+        {{ stepGuide.carousel(site.data.steps) }}
       </div>
     </div>
     <div class="row">
@@ -74,66 +74,66 @@
       </div>
     </div>
     <div class="row" id="contact-us">
-        <div class="contact-us-title">
-          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-          Contact us
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 contact-list">
-            <p class="contact-us-p">Get in touch</p>
-            <p class="email">
-              <i class="fa fa-comments-o fa-2x" aria-hidden="true"></i>
-              info@inspect-my-cv.com
-            </p>
-            <p class="telephone">
-              <i class="fa fa-phone-square fa-2x" aria-hidden="true"></i>
-              +380 98 703 40 15
-            </p>
-            <p class="location">
-              <i class="fa fa-street-view fa-2x" aria-hidden="true"></i>
-              Ukraine, Vinnytsia
-            </p>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            {% include '_modules/contact-us-form/contact-us-form.nunjucks' %}
-          </div>
-        </div>
-    </div>
-      <div class="row social">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-          <div class="social-title">
-            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-            We are in social
-          </div>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-          <ul class="list-inline social-links-group">
-            <li>
-              <a href="https://plus.google.com/u/0/112643538224871282165" class="social-link">
-                <i class="fa fa-google-plus-square" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/murceca" class="social-link">
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/grischuksv/" class="social-link">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/r_svetulik" class="social-link">
-                <i class="fa fa-twitter-square" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div class="contact-us-title">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+        Contact us
       </div>
       <div class="row">
-        <footer class="footer">
-          &copy; Inspect-my-CV 2017
-        </footer>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 contact-list">
+          <p class="contact-us-p">Get in touch</p>
+          <p class="email">
+            <i class="fa fa-comments-o fa-2x" aria-hidden="true"></i>
+            info@inspect-my-cv.com
+          </p>
+          <p class="telephone">
+            <i class="fa fa-phone-square fa-2x" aria-hidden="true"></i>
+            +380 98 703 40 15
+          </p>
+          <p class="location">
+            <i class="fa fa-street-view fa-2x" aria-hidden="true"></i>
+            Ukraine, Vinnytsia
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          {% include '_modules/contact-us-form/contact-us-form.nunjucks' %}
+        </div>
       </div>
+    </div>
+    <div class="row social">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="social-title">
+          <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+          We are in social
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <ul class="list-inline social-links-group">
+          <li>
+            <a href="https://plus.google.com/u/0/112643538224871282165" class="social-link">
+              <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/murceca" class="social-link">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/grischuksv/" class="social-link">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/r_svetulik" class="social-link">
+              <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <footer class="footer">
+        &copy; Inspect-my-CV 2017
+      </footer>
+    </div>
   {% endblock %}
