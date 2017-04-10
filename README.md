@@ -62,11 +62,22 @@ You can run ESLint using `gulp test` command.
 
 ### Email templates
 
-- `contact_request/subject.html`
-- `contact_request/body.html`
+#### Contact-us form
+
+Email for customer will be generated based on these templates:
 - `contact_response/subject.html`
 - `contact_response/body.html`
+
+Email for site managers will be generated based on these templates:
+- `contact_request/subject.html`
+- `contact_request/body.html`
+
+#### Inspect CV form
+
+Email for customer will be generated based on these templates:
 - `inspect_cv_request/subject.html`
 - `inspect_cv_request/body.html`
+
+Email for site managers will be generated based on these templates:
 - `inspect_cv_response/subject.html`
 - `inspect_cv_response/body.html`
