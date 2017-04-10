@@ -31,7 +31,7 @@
       </div>
       <div class="col-xs-12 col-md-6 video-about">
         <video controls poster="images/scene-preview.jpg">
-          <source src="mov/scene.mp4" type="video/mp4">
+          <source src="public/scene.mp4" type="video/mp4">
           Sorry, your browser doesn't support HTML5 video.
         </video>
       </div>
