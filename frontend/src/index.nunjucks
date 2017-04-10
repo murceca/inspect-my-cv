@@ -63,14 +63,17 @@
         <i class="fa fa-share-square-o" aria-hidden="true"></i>
         Inspect my CV!
       </div>
-      <h1 class="inspect-promo-title">
-        Take a FREE CV Review
-      </h1>
-      <p class="inspect-promo-desc">
-        Upload your CV for a free, confidential review from a trusted CV expert.
-      </p>
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-        {% include '_modules/inspect-cv-form/inspect-cv-form.nunjucks' %}
+      <div class="col-xs-12">
+        <h1 class="inspect-promo-title">
+          Take a FREE CV Review
+        </h1>
+        <p class="inspect-promo-desc">
+          Upload your CV for a free, confidential review from a trusted CV expert.
+        </p>
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          {% include '_modules/inspect-cv-form/inspect-cv-form.nunjucks' %}
+          {% include '_modules/inspect-cv-form/terms-and-conditions.nunjucks' %}
+        </div>
       </div>
     </div>
     <div class="row" id="contact-us">
@@ -136,4 +139,5 @@
         &copy; Inspect-my-CV 2017
       </footer>
     </div>
-  {% endblock %}
+  </div>
+{% endblock %}
