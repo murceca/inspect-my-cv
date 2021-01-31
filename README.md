@@ -29,9 +29,9 @@ You can run ESLint using `gulp test` command.
 
 ## How to install
 
-1. Go to back-end directory: `cd backend`
-2. Create virtual environment in the `env` folder: `virtualenv env`
-3. Activate virtual environment: `source env/bin/activate`
+1. Create virtual environment in the `inspect_my_cv_env` folder: `virtualenv inspect_my_cv_env`
+2. Activate virtual environment: `source inspect_my_cv_env/bin/activate`
+3. Go to back-end directory: `cd backend`
 4. Install python requirements: `pip install -r requirements.txt`
 
 ## How to start
