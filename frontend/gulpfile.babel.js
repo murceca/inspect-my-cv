@@ -38,29 +38,29 @@ glob.sync('./gulp/**/*.js').filter(function(file) {
 });
 
 // Default task
-gulp.task('default', ['clean'], () => {
+gulp.task('default', gulp.series('clean'), () => {
   gulp.start('build');
 });
 
 // Build production-ready code
-gulp.task('build', [
+gulp.task('build',gulp.series(
   'copy',
   'imagemin',
   'nunjucks',
   'sass',
   'browserify'
-]);
+));
 
 // Server tasks with watch
-gulp.task('serve', [
+gulp.task('serve', gulp.series(
   'imagemin',
   'copy',
   'nunjucks',
   'sass',
-  'browserify',
+  //'browserify',
   'browserSync',
   'watch'
-]);
+));
 
 // Testing
-gulp.task('test', ['eslint']);
+gulp.task('test', gulp.series('eslint'));

@@ -23,7 +23,7 @@ export default function(gulp, plugins, args, config, taskTarget, browserSync) {
           let json = {};
           try {
             if (path.extname(file).match(/^.ya?ml$/)) {
-              json = yaml.safeLoad(fs.readFileSync(file, 'utf8'));
+              json = yaml.load(fs.readFileSync(file, 'utf8'));
             }
             else {
               json = JSON.parse(fs.readFileSync(file, 'utf8'));

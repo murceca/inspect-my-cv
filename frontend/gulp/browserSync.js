@@ -1,11 +1,11 @@
 'use strict';
 
-import proxyMiddleware from 'http-proxy-middleware';
+const { createProxyMiddleware } = require('http-proxy-middleware');
 
 export default function(gulp, plugins, args, config, taskTarget, browserSync) {
   // BrowserSync
-  gulp.task('browserSync', () => {
-    const apiProxy = proxyMiddleware('/api', {
+  gulp.task('browserSync', (done) => {
+    const apiProxy = createProxyMiddleware('/api', {
       target: 'http://localhost:8080'
     });
     browserSync.init({
@@ -25,5 +25,6 @@ export default function(gulp, plugins, args, config, taskTarget, browserSync) {
         })()
       }
     });
+    done();
   });
 }
